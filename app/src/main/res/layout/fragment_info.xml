@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9651">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/thirdBackButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="#FF9651"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toTopOf="@id/infoHeaderTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/infoHeaderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Well Done! \n Sign up complete"
+        android:textColor="@color/white"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toTopOf="@id/nameLabelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thirdBackButton"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id='@+id/nameLabelTv'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintTop_toBottomOf="@id/infoHeaderTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firstNameTv"
+        android:textColor="@color/white"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/firstNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/surnameLabelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameLabelTv"
+        tools:text="name" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id='@+id/surnameLabelTv'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/firstNameTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/surnameTv"
+        android:text="Surname"
+        android:textColor="@color/white"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/surnameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/emailLabelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surnameLabelTv"
+        tools:text="surname" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id='@+id/emailLabelTv'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/surnameTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/emailTv"
+        android:text="Email"
+        android:textColor="@color/white"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/passwordLabelTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLabelTv"
+        tools:text="email" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id='@+id/passwordLabelTv'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/passwordTv"
+        android:text="Password"
+        android:textColor="@color/white"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/passwordTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordLabelTv"
+        tools:text="password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
